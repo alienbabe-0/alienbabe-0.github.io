@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>動画ページ</title>
 
-    <style><!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>動画サイト</title> <style> body { margin: 0; background: #111; color: white; font-family: sans-serif; text-align: center; } /* サイトタイトル */ .site-title { padding: 25px; font-size: 32px; font-weight: bold; } /* 動画 */ .video-container { width: 90%; max-width: 1000px; margin: 0 auto; } video { width: 100%; height: auto; display: block; } </style> </head> <body> <div class="site-title"> 動画サイト </div> <div class="video-container"> <video controls> <source src="video.mp4" type="video/mp4"> お使いのブラウザは動画再生に対応していません。 </video> </div> </body> </html>
+    <style>
         body {
             margin: 0;
             background: #111;
@@ -14,8 +15,10 @@
             text-align: center;
         }
 
-        h1 {
-            margin: 30px 0 20px;
+        .site-title {
+            padding: 25px;
+            font-size: 32px;
+            font-weight: bold;
         }
 
         .video-container {
@@ -26,7 +29,6 @@
 
         video {
             width: 100%;
-            height: auto;
             display: block;
         }
     </style>
@@ -34,14 +36,16 @@
 
 <body>
 
-    <h1>動画タイトル</h1>
+    <div class="site-title">
+        動画サイト
+    </div>
 
     <div class="video-container">
-        <video autoplay muted controls>
+        <video controls playsinline>
             <source src="IMG.mp4" type="video/mp4">
-            お使いのブラウザは動画再生に対応していません。
         </video>
     </div>
 
 </body>
 </html>
+```
